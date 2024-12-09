@@ -60,11 +60,11 @@ Pearl and Pluthon, a pair of adventurous sibling cats, live in a comfy apartment
 ## 📂 **Folder Structure**
 
 /Assets  
-  /Animation     # Animations (Characters, Obstacles, etc.)  
-  /Audio         # Music and sound effects  
-  /Scripts       # Game scripts (CameraFollow, SwitchCharacter, etc.)  
-  /Sprites       # Character and environment sprites  
-  /Scenes        # Game scenes (Apartment, Outdoor levels, etc.)  
+  /Animation     #Animations (Characters, Obstacles, etc.)  
+  /Audio         #Music and sound effects  
+  /Scripts       #Game scripts (CameraFollow, SwitchCharacter, etc.)  
+  /Sprites       #Character and environment sprites  
+  /Scenes        #Game scenes (Apartment, Outdoor levels, etc.)  
 /README.md
 
 ---
