@@ -1,33 +1,24 @@
 using System.Collections;
-using TMPro;
 using UnityEngine;
 
 public class TransitionZone : MonoBehaviour
 {
-    public GameObject scoreCanvas;        // Canvas that displays the score
     public SpriteRenderer iconPearl;      // Icon for Pearl character
     public SpriteRenderer iconPluthon;    // Icon for Pluthon character
-    public SpriteRenderer iconFeather;    // Icon for the golden feather
 
     private bool pearlInZone = false;     // Flag to check if Pearl is inside the transition zone
     private bool pluthonInZone = false;   // Flag to check if Pluthon is inside the transition zone
 
-    private LevelScoreManager scoreManager; // Reference to the score manager to get the score
-
     private bool transitionTriggered = false; // Flag to prevent triggering the transition multiple times
+
+    public EndMenu endMenu; // Reference to the EndMenu script
 
     // Called when the script is first initialized
     private void Start()
     {
-        // Initialize icons to be gray (inactive state)
-        iconPearl.color = Color.gray;
-        iconPluthon.color = Color.gray;
-        iconFeather.color = Color.gray;
-
-        scoreCanvas.SetActive(false); // Hide the score canvas initially
-
-        // Find the LevelScoreManager in the scene to manage score data
-        scoreManager = FindFirstObjectByType<LevelScoreManager>();
+        // Initialize icons to be black (inactive state)
+        iconPearl.color = Color.black;
+        iconPluthon.color = Color.black;
     }
 
     // Called when another collider enters the trigger zone (used for detection)
@@ -50,7 +41,7 @@ public class TransitionZone : MonoBehaviour
         if (pearlInZone && pluthonInZone && !transitionTriggered)
         {
             transitionTriggered = true; // Prevent multiple transitions
-            StartCoroutine(WaitAndShowScore(1f)); // Start a coroutine with a 1-second delay
+            StartCoroutine(TriggerEndMenu(1f)); // Start a coroutine with a 1-second delay
         }
     }
 
@@ -58,68 +49,23 @@ public class TransitionZone : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         // If Pearl exits the zone, reset the flag and icon color
-        if (other.CompareTag("Pearl"))
+        if (iconPearl!=null&&other.CompareTag("Pearl"))
         {
             pearlInZone = false;
-            iconPearl.color = Color.gray; // Set icon back to gray
+            iconPearl.color = Color.black; // Set icon back to black
         }
         // If Pluthon exits the zone, reset the flag and icon color
-        else if (other.CompareTag("Pluthon"))
+        else if (iconPluthon!=null&&other.CompareTag("Pluthon"))
         {
             pluthonInZone = false;
-            iconPluthon.color = Color.gray; // Set icon back to gray
+            iconPluthon.color = Color.black; // Set icon back to black
         }
     }
 
-    // Coroutine that waits for a specified delay before showing the score
-    private IEnumerator WaitAndShowScore(float delay)
+    // Coroutine to trigger the end menu
+    private IEnumerator TriggerEndMenu(float delay)
     {
-        yield return new WaitForSeconds(delay); // Wait for the specified delay
-
-        ShowScore(); // Call method to show the score
-    }
-
-    // Method to display the score and pause the game
-    private void ShowScore()
-    {
-        Time.timeScale = 0f; // Pause the game
-
-        scoreCanvas.SetActive(true); // Show the score canvas
-
-        // Update the score display with the collected fish count and elapsed time
-        if (scoreManager != null)
-        {
-            scoreCanvas.transform.Find("FishText").GetComponent<TMP_Text>().text =
-                "Fish Collected : " + scoreManager.fish;
-            scoreCanvas.transform.Find("TimeText").GetComponent<TMP_Text>().text =
-                "Time : " + scoreManager.GetFormattedTime();
-
-            // If the golden feather was collected, show the icon
-            if (scoreManager.FeatherCollected)
-            {
-                iconFeather.color = Color.white;
-            }
-        }
-    }
-
-    // Method to transition to the next level (load next scene)
-    public void NextLevel()
-    {
-        Time.timeScale = 1; // Resume the game
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-    // Method to restart the current level (reload current scene)
-    public void Restart()
-    {
-        Time.timeScale = 1f; // Resume the game
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
-    }
-
-    // Method to return to the main menu (load main menu scene)
-    public void ReturnHome()
-    {
-        Time.timeScale = 1f; // Resume the game
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Scene_0_Main_Menu"); // Load the main menu scene
+        yield return new WaitForSeconds(delay);
+        endMenu.ShowEndMenu(); // Call the EndMenu script to display the end menu
     }
 }
