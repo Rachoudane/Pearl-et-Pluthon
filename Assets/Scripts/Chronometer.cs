@@ -4,46 +4,58 @@ using UnityEngine.UI;
 
 public class Chronometer : MonoBehaviour
 {
-    
+    // Reference to the TextMeshPro UI element for displaying the time
     public TMP_Text timeText;
-    private float elapsedTime; // Temps écoulé
-    private bool isRunning = true; // Pour contrôler si le chrono est actif ou non
 
+    // Variable to store the elapsed time in seconds
+    private float elapsedTime;
+
+    // Controls whether the chronometer is running
+    private bool isRunning = true;
+
+    // Called when the script starts
     void Start()
     {
+        // Initialize the elapsed time to 0
         elapsedTime = 0f;
     }
 
+    // Called once per frame
     void Update()
     {
+        // Check if the chronometer is active
         if (isRunning)
         {
-            // Augmenter le temps écoulé
+            // Increase the elapsed time by the time passed since the last frame
             elapsedTime += Time.deltaTime;
 
-            // Convertir le temps écoulé en minutes et secondes
+            // Convert the elapsed time into minutes and seconds
             int minutes = Mathf.FloorToInt(elapsedTime / 60F);
             int seconds = Mathf.FloorToInt(elapsedTime % 60F);
 
-            // Afficher le temps au format MM:SS
+            // Display the elapsed time in MM:SS format
             timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
         }
     }
 
-    // Méthodes pour gérer le chrono (si tu veux l’arrêter en fin de niveau par exemple)
+    // Stops the chronometer (e.g., at the end of a level)
     public void StopChronometer()
     {
         isRunning = false;
     }
 
+    // Starts or restarts the chronometer
     public void StartChronometer()
     {
         isRunning = true;
-        elapsedTime = 0f; // Réinitialise si on redémarre
+
+        // Reset elapsed time to 0 if restarting
+        elapsedTime = 0f;
     }
 
+    // Retrieves the elapsed time for external use (e.g., level score display)
     public float GetElapsedTime()
     {
-        return elapsedTime; // Pour afficher le temps en fin de niveau
+        return elapsedTime;
     }
 }

@@ -1,47 +1,65 @@
+using System;
 using UnityEngine;
 
 public class LevelScoreManager : MonoBehaviour
 {
-    public int poissons = 0;       // Poissons collectés
-    public bool plumeCollectee = false; // Plume dorée obtenue ou non
+    // Tracks the number of fish collected
+    public int fish = 0;
 
-    private Chronometer chronometer; // Référence au script Chronometer
+    // Tracks whether the golden feather has been collected
+    public bool FeatherCollected = false;
 
+    // Reference to the Chronometer script
+    private Chronometer chronometer;
+
+    // Called when the script starts
     private void Start()
     {
-        // Trouve le script Chronometer automatiquement dans la scène
+        // Automatically finds the Chronometer script in the scene
         chronometer = FindFirstObjectByType<Chronometer>();
     }
 
-    public void AjouterPoisson()
+    // Increments the fish count by 1
+    public void AddFish()
     {
-        poissons++;
+        fish++;
     }
 
-    public void CollecterPlume()
+    // Marks the feather as collected
+    public void CollectFeather()
     {
-        plumeCollectee = true;
+        FeatherCollected = true;
     }
 
+    // Retrieves and formats the elapsed time from the Chronometer
     public string GetFormattedTime()
     {
-        // Récupère et formate le temps depuis le Chronometer
         if (chronometer != null)
         {
+            // Get the elapsed time in seconds
             float elapsedTime = chronometer.GetElapsedTime();
+
+            // Convert the time into minutes and seconds
             int minutes = Mathf.FloorToInt(elapsedTime / 60F);
             int seconds = Mathf.FloorToInt(elapsedTime % 60F);
+
+            // Return the time as a string in MM:SS format
             return string.Format("{0:00}:{1:00}", minutes, seconds);
         }
+
+
+        Console.WriteLine("Sorry but we didn't find the Chronometer!");
+        // Return "00:00" as a fallback if the Chronometer is not found
         return "00:00";
     }
 
+    // Resets the game scores and states
     public void ResetScores()
     {
-        poissons = 0;
-        plumeCollectee = false;
+        fish = 0; // Reset fish count
+        FeatherCollected = false; // Reset feather status
 
-        // Réinitialise le chronomètre
+        // Restart the chronometer if it exists
         if (chronometer != null)
         {
             chronometer.StartChronometer();

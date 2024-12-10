@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|c:\\users\\marou\\documents\\unity dev\\pearl et pluthon\\assets\\scripts\\characteruimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characteruimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|c:\\users\\marou\\documents\\unity dev\\pearl et pluthon\\assets\\scripts\\transitionzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\transitionzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\assets\\scripts\\transitionzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\transitionzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\assets\\scripts\\characteruimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characteruimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\assets\\scripts\\levelscoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\assets\\scripts\\poissoncollectible.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\poissoncollectible.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\assets\\scripts\\plumecollectible.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\plumecollectible.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\assets\\scripts\\chronometer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,23 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{c478b6ac-54a8-3bd5-bc46-494f58b422c9}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PlumeCollectible.cs",
-              "DocumentMoniker": "C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\Assets\\Scripts\\PlumeCollectible.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlumeCollectible.cs",
-              "ToolTip": "C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\Assets\\Scripts\\PlumeCollectible.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlumeCollectible.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T22:22:47.598Z"
             },
             {
               "$type": "Document",
@@ -98,19 +82,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TransitionZone.cs",
               "DocumentMoniker": "C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\Assets\\Scripts\\TransitionZone.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TransitionZone.cs",
               "ToolTip": "C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\Assets\\Scripts\\TransitionZone.cs",
               "RelativeToolTip": "Assets\\Scripts\\TransitionZone.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAYAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAowDgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T16:09:10.691Z"
+              "WhenOpened": "2024-11-16T16:09:10.691Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CharacterUIManager.cs",
               "DocumentMoniker": "C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\Assets\\Scripts\\CharacterUIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterUIManager.cs",
@@ -118,12 +103,11 @@
               "RelativeToolTip": "Assets\\Scripts\\CharacterUIManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T12:03:25.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T12:03:25.104Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\Assets\\Scripts\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu.cs",
@@ -135,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "PauseMenu.cs",
               "DocumentMoniker": "C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\Assets\\Scripts\\PauseMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PauseMenu.cs",
@@ -147,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Chronometer.cs",
               "DocumentMoniker": "C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\Assets\\Scripts\\Chronometer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Chronometer.cs",
@@ -159,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "SwitchCharacter.cs",
               "DocumentMoniker": "C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\Assets\\Scripts\\SwitchCharacter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SwitchCharacter.cs",
@@ -171,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
@@ -183,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "CameraFollow.cs",
               "DocumentMoniker": "C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\Assets\\Scripts\\CameraFollow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollow.cs",

@@ -2,40 +2,50 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    public float jumpForce = 5f;
-    private Rigidbody2D rb;
-    private bool isGrounded = true;
-    private SwitchCharacter switchCharacter;
+    public float moveSpeed = 5f; // Speed at which the character moves horizontally
+    public float jumpForce = 5f; // Force applied for jumping
+    private Rigidbody2D rb; // Reference to the Rigidbody2D component (used for physics interactions)
+    private bool isGrounded = true; // Flag to check if the player is grounded (on the floor)
+    private SwitchCharacter switchCharacter; // Reference to the SwitchCharacter script to determine the active character
 
+    // Called when the script is first initialized
     void Start()
     {
+        // Get the Rigidbody2D component attached to the player
         rb = GetComponent<Rigidbody2D>();
-        switchCharacter = FindFirstObjectByType<SwitchCharacter>(); // Trouve le SwitchCharacter pour accéder à activeCharacter
+
+        // Find the SwitchCharacter component in the scene to manage active character switching
+        switchCharacter = FindFirstObjectByType<SwitchCharacter>(); // Finds the SwitchCharacter object automatically
     }
 
+    // Called every frame
     void Update()
     {
-        // Vérifie si ce personnage est le personnage actif
+        // Check if this player object is the active character
         if (switchCharacter.activeCharacter == this.gameObject)
         {
-            // Mouvement horizontal
-            float horizontalInput = Input.GetAxis("Horizontal");
+            // Horizontal movement input (e.g., arrow keys or A/D)
+            float horizontalInput = Input.GetAxis("Horizontal"); // Returns a value between -1 and 1
+            // Update the Rigidbody2D velocity for horizontal movement while keeping the current vertical velocity
             rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
 
-            // Saut
-            if (Input.GetButtonDown("Jump") && isGrounded)
+            // Jump action
+            if (Input.GetButtonDown("Jump") && isGrounded) // If the Jump button is pressed and the player is grounded
             {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                isGrounded = false;
+                // Apply a vertical force to make the character jump
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // Preserve the horizontal velocity while adding jump force
+                isGrounded = false; // Set grounded flag to false when the player is in the air
             }
         }
     }
 
+    // Called when the player collides with an object
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // Check if the player collided with the ground (using tag to identify the ground)
         if (collision.gameObject.CompareTag("Ground"))
         {
+            // Set the isGrounded flag to true when the player touches the ground
             isGrounded = true;
         }
     }

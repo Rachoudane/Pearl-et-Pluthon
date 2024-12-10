@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638669490851612833
-    m_Hash: 3337763927
+      ticks: 638693813719092582
+    m_Hash: 3585371539
   m_LockFileStatus:
     m_FilePath: C:/Users/Marou/Documents/Unity Dev/Pearl et Pluthon/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638669491266931388
-    m_Hash: 1442404534
+      ticks: 638693813719102582
+    m_Hash: 3438209608
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -118,8 +118,10 @@ m_ResolvedPackages:
     - 2.4.4
     - 2.5.1
     - 2.5.2
+    - 2.6.0
     compatible:
     - 2.5.2
+    - 2.6.0
     recommended: 2.5.2
     deprecated: []
   dependencies: []
@@ -4888,9 +4890,11 @@ m_ResolvedPackages:
     - 1.1.4
     - 1.1.5
     - 1.1.6
+    - 1.1.7
     compatible:
     - 1.1.6
-    recommended: 1.1.6
+    - 1.1.7
+    recommended: 1.1.7
     deprecated: []
   dependencies:
   - name: com.unity.2d.common

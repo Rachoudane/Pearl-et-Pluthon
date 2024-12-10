@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\assets\\scripts\\characteruimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characteruimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\assets\\scripts\\transitionzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\transitionzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|c:\\users\\marou\\documents\\unity dev\\pearl et pluthon\\assets\\scripts\\transitionzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\transitionzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|c:\\users\\marou\\documents\\unity dev\\pearl et pluthon\\assets\\scripts\\characteruimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characteruimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\assets\\scripts\\levelscoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,8 +70,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PlumeCollectible.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T22:22:47.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T22:22:47.598Z"
             },
             {
               "$type": "Document",
@@ -83,8 +82,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PoissonCollectible.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T22:21:21.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T22:21:21.205Z"
             },
             {
               "$type": "Document",
@@ -96,25 +94,24 @@
               "RelativeToolTip": "Assets\\Scripts\\LevelScoreManager.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAowAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T21:57:47.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T21:57:47.822Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TransitionZone.cs",
               "DocumentMoniker": "C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\Assets\\Scripts\\TransitionZone.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TransitionZone.cs",
               "ToolTip": "C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\Assets\\Scripts\\TransitionZone.cs",
               "RelativeToolTip": "Assets\\Scripts\\TransitionZone.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAYAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAowDgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T16:09:10.691Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CharacterUIManager.cs",
               "DocumentMoniker": "C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\Assets\\Scripts\\CharacterUIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterUIManager.cs",
