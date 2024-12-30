@@ -44,7 +44,7 @@ Pearl and Pluthon, a pair of adventurous sibling cats, live in a comfy apartment
 - **🖥 Engine**: Unity (2D Built-In Render Pipeline)  
 - **📜 Language**: C#  
 - **🎨 Art**: Custom 2D sprite assets  
-- **⏳ Development Time**: 2 weeks  
+- **⏳ Development Time**: Approximately 8 weeks (part-time, alongside a 37-hour/week job)
 
 ---
 
@@ -77,10 +77,10 @@ Pearl and Pluthon, a pair of adventurous sibling cats, live in a comfy apartment
 
 ## 🚧 **Planned Improvements**
 
-🐈‍⬛ Add more levels with diverse puzzles.
-🎵 Enhance with more music and sound effects.
-✨ Polish animations for smoother gameplay.
-🔧 Introduce more unique abilities for each character!
+- 🐈‍⬛ Add more levels with diverse puzzles.  
+- 🎵 Enhance with more music and sound effects.  
+- ✨ Polish animations for smoother gameplay.  
+- 🔧 Introduce more unique abilities for each character!  
 
 ---
 
