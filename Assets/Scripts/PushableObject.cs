@@ -2,66 +2,63 @@ using UnityEngine;
 
 public class PushableObject : MonoBehaviour
 {
-    public float pushForce = 5f; // Force applied to pushable objects
-    private Rigidbody2D rb;      // Reference to Rigidbody2D
-    private SwitchCharacter switchCharacter; // Reference to SwitchCharacter
+    public float pushForce = 10f; // Force applied when pushing
+    private Rigidbody2D rb;      // Rigidbody2D component of the pushable object
 
-    private bool isPluthonNearby = false; // Flag to check if Pluthon is near the object
+    // Tracks if the player is standing on top
+    private bool playerOnTop = false;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>(); // Get Rigidbody2D component
-        switchCharacter = FindObjectOfType<SwitchCharacter>(); // Get the SwitchCharacter script
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        // Apply movement ONLY IF Pluthon is nearby and is the active character
-        if (isPluthonNearby && IsPluthonActive())
+        // Only allow Pluthon to push the object (check active character)
+        if (IsPluthonPushing() && !playerOnTop) // Disable pushing if player is on top
         {
             float horizontalInput = Input.GetAxis("Horizontal");
             if (horizontalInput != 0f)
             {
-                // Move the chair using velocity
-                rb.linearVelocity = new Vector2(horizontalInput * pushForce, rb.linearVelocity.y);
-            }
-            else
-            {
-                // Stop the chair when no input is detected
-                rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+                // Apply horizontal force to push the object
+                rb.AddForce(new Vector2(horizontalInput * pushForce, 0), ForceMode2D.Force);
             }
         }
         else
         {
-            // Lock the chair when conditions aren't met
+            // Stop the movement if conditions aren't met
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
         }
     }
 
-    // Check if Pluthon is the active character
-    private bool IsPluthonActive()
+    // Check if the active character is Pluthon
+    private bool IsPluthonPushing()
     {
-        if (switchCharacter != null)
-        {
-            return switchCharacter.activeCharacter.CompareTag("Pluthon");
-        }
-        return false;
+        // Assuming the active character is managed by SwitchCharacter
+        SwitchCharacter switchCharacter = FindFirstObjectByType<SwitchCharacter>();
+        return switchCharacter != null && switchCharacter.activeCharacter.CompareTag("Pluthon");
     }
 
-    // Detect if Pluthon is in contact with the chair
+    // Detect if the player is on top of the object
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Pluthon"))
         {
-            isPluthonNearby = true; // Set flag when Pluthon collides
+            // Check if the player is above the object
+            if (collision.contacts[0].normal.y < -0.5f) // Normal pointing downwards means on top
+            {
+                playerOnTop = true;
+            }
         }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
+        // Reset flag when the player leaves
         if (collision.gameObject.CompareTag("Pluthon"))
         {
-            isPluthonNearby = false; // Reset flag when Pluthon leaves
+            playerOnTop = false;
         }
     }
 }
