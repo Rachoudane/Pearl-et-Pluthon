@@ -432,6 +432,7 @@
 "Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/PauseMenu.cs"
 "Assets/Scripts/PlayerMovement.cs"
+"Assets/Scripts/PushableObject.cs"
 "Assets/Scripts/ResultBar.cs"
 "Assets/Scripts/SwitchCharacter.cs"
 "Assets/Scripts/TransitionZone.cs"
