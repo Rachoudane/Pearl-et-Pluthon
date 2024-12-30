@@ -8,6 +8,9 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded = true; // Flag to check if the player is grounded (on the floor)
     private SwitchCharacter switchCharacter; // Reference to the SwitchCharacter script to determine the active character
 
+    public GameObject pearl; // Reference to the Pearl GameObject
+    public GameObject pluthon; // Reference to the Pluthon GameObject
+
     // Called when the script is first initialized
     void Start()
     {
@@ -16,7 +19,21 @@ public class PlayerMovement : MonoBehaviour
 
         // Find the SwitchCharacter component in the scene to manage active character switching
         switchCharacter = FindFirstObjectByType<SwitchCharacter>(); // Finds the SwitchCharacter object automatically
-        rb.freezeRotation = true;
+        rb.freezeRotation = true; // Prevents rotation due to physics interactions
+
+        // Ignore collisions between Pearl and Pluthon
+        if (pearl != null && pluthon != null)
+        {
+            // Get the Collider2D components of both characters
+            Collider2D pearlCollider = pearl.GetComponent<Collider2D>();
+            Collider2D pluthonCollider = pluthon.GetComponent<Collider2D>();
+
+            // If both characters have colliders, ignore collisions between them
+            if (pearlCollider != null && pluthonCollider != null)
+            {
+                Physics2D.IgnoreCollision(pearlCollider, pluthonCollider); // Ignore collision between Pearl and Pluthon
+            }
+        }
     }
 
     // Called every frame
@@ -26,7 +43,8 @@ public class PlayerMovement : MonoBehaviour
         if (switchCharacter.activeCharacter == this.gameObject)
         {
             // Horizontal movement input (e.g., arrow keys or A/D)
-            float horizontalInput = Input.GetAxis("Horizontal"); // Returns a value between -1 and 1
+            float horizontalInput = Input.GetAxis("Horizontal"); // Returns a value between -1 and 1 based on input
+
             // Update the Rigidbody2D velocity for horizontal movement while keeping the current vertical velocity
             rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
 
