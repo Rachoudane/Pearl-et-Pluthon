@@ -9,17 +9,23 @@ public class EndMenu : MonoBehaviour
     public TMP_Text chronoText;           // Text component for displaying elapsed time
     public SpriteRenderer iconFeather;    // Icon for the golden feather
 
-    private LevelScoreManager scoreManager; // Reference to the score manager
+
+    public LevelScoreManager scoreManager; // Reference to the score manager
 
     private void Start()
     {
         scoreCanvas.SetActive(false); // Hide the score canvas initially
-        scoreManager = FindFirstObjectByType<LevelScoreManager>();
 
         // Make sure the feather icon starts black
         if (iconFeather != null)
         {
             iconFeather.color = Color.black;
+        }
+
+        //Check if the LevelScoreManager is missing
+        if (scoreManager == null)
+        {
+            Debug.LogError("LevelScoreManager is missing in the scene.");
         }
     }
 

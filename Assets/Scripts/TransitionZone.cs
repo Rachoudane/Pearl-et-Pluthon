@@ -41,7 +41,7 @@ public class TransitionZone : MonoBehaviour
         if (pearlInZone && pluthonInZone && !transitionTriggered)
         {
             transitionTriggered = true; // Prevent multiple transitions
-            StartCoroutine(TriggerEndMenu(1f)); // Start a coroutine with a 1-second delay
+            StartCoroutine(TriggerEndMenu(0.5f)); // Start a coroutine with a 1-second delay
         }
     }
 
@@ -65,7 +65,7 @@ public class TransitionZone : MonoBehaviour
     // Coroutine to trigger the end menu
     private IEnumerator TriggerEndMenu(float delay)
     {
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForSeconds(delay); 
         endMenu.ShowEndMenu(); // Call the EndMenu script to display the end menu
     }
 }
