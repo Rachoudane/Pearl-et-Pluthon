@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Find the SwitchCharacter component in the scene to manage active character switching
         switchCharacter = FindFirstObjectByType<SwitchCharacter>(); // Finds the SwitchCharacter object automatically
+        rb.freezeRotation = true;
     }
 
     // Called every frame
