@@ -27,6 +27,29 @@ public class TransitionZone : MonoBehaviour
         scoreManager = FindFirstObjectByType<LevelScoreManager>(); // Find the score manager to check feather status
     }
 
+    // Called every frame to check for updates
+    private void Update()
+    {
+        // Check if the Golden Feather has been collected
+        if (scoreManager != null)
+        {
+            featherCollected = scoreManager.FeatherCollected;
+        }
+
+        // Update the Feather icon color based on collection status
+        if (featherCollected && iconFeather != null)
+        {
+            iconFeather.color = Color.white; // Change color to white if collected
+        }
+
+        // If both characters and the feather are in the zone and transition hasn't been triggered
+        if (pearlInZone && pluthonInZone && featherCollected && !transitionTriggered)
+        {
+            transitionTriggered = true; // Prevent multiple transitions
+            StartCoroutine(TriggerEndMenu(0.5f)); // Start a coroutine with a 1-second delay
+        }
+    }
+
     // Called when another collider enters the trigger zone (used for detection)
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -41,19 +64,6 @@ public class TransitionZone : MonoBehaviour
         {
             pluthonInZone = true; // Set flag for Pluthon
             iconPluthon.color = Color.white; // Show the Pluthon icon
-        }
-
-        // Check if the Golden Feather has been collected
-        if (scoreManager != null)
-        {
-            featherCollected = scoreManager.FeatherCollected;
-        }
-
-        // If both characters and the feather are in the zone and transition hasn't been triggered
-        if (pearlInZone && pluthonInZone && featherCollected && !transitionTriggered)
-        {
-            transitionTriggered = true; // Prevent multiple transitions
-            StartCoroutine(TriggerEndMenu(1f)); // Start a coroutine with a 1-second delay
         }
     }
 
