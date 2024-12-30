@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\assets\\scripts\\transitionzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|c:\\users\\marou\\documents\\unity dev\\pearl et pluthon\\assets\\scripts\\transitionzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\transitionzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\switchcharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|c:\\users\\marou\\documents\\unity dev\\pearl et pluthon\\assets\\scripts\\resultbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\assets\\scripts\\resultbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\resultbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -27,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|c:\\users\\marou\\documents\\unity dev\\pearl et pluthon\\assets\\scripts\\levelscoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|C:\\Users\\Marou\\Documents\\Unity Dev\\Pearl et Pluthon\\assets\\scripts\\levelscoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FB2CCB9-1174-4BB2-321E-3E31B3637C6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelscoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -78,8 +78,7 @@
               "RelativeToolTip": "Assets\\Scripts\\ResultBar.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T17:35:24.094Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T17:35:24.094Z"
             },
             {
               "$type": "Document",
@@ -91,8 +90,7 @@
               "RelativeToolTip": "Assets\\Scripts\\EndMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T17:15:06.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T17:15:06.868Z"
             },
             {
               "$type": "Document",
@@ -104,8 +102,7 @@
               "RelativeToolTip": "Assets\\Scripts\\CollectibleFish.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T13:16:43.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T13:16:43.655Z"
             },
             {
               "$type": "Document",
@@ -117,8 +114,7 @@
               "RelativeToolTip": "Assets\\Scripts\\CollectibleFeather.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T13:12:25.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T13:12:25.019Z"
             },
             {
               "$type": "Document",
@@ -130,8 +126,7 @@
               "RelativeToolTip": "Assets\\Scripts\\LevelScoreManager.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwBgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T21:57:47.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T21:57:47.822Z"
             },
             {
               "$type": "Document",
@@ -168,8 +163,7 @@
               "RelativeToolTip": "Assets\\Scripts\\MainMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T11:28:37.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T11:28:37.89Z"
             },
             {
               "$type": "Document",
@@ -181,8 +175,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PauseMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T10:27:12.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T10:27:12.572Z"
             },
             {
               "$type": "Document",
@@ -206,8 +199,7 @@
               "RelativeToolTip": "Assets\\Scripts\\SwitchCharacter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T22:27:27.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T22:27:27.825Z"
             },
             {
               "$type": "Document",
@@ -219,8 +211,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAgwAoAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T22:22:31.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T22:22:31.612Z"
             },
             {
               "$type": "Document",
